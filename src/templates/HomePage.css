@@ -1,0 +1,15 @@
+.PromoBoxes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.PromoBoxes--Box {
+  background: var(--accent);
+  width: calc(33.3%);
+  height: 20rem;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}

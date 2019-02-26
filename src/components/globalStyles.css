@@ -1,11 +1,12 @@
 :root {
-  --primary: #00c2bd;
+  --primary: #00aeef;
+  --accent: #1b75bc;
   --secondary: #000;
   --lightGrey: whitesmoke;
   --midGrey: #cacaca;
-  --darkGrey: #272727;
+  --darkGrey: #58595b;
   --danger: #ff3d3d;
-  --font-primary: 'Open Sans', sans-serif;
+  --font-primary: "Open Sans", sans-serif;
   --font-system: system-ui; /* postcssPresetEnv */
   --borderRadius: 3px;
 }
@@ -86,7 +87,7 @@ code {
 code:before,
 code:after {
   letter-spacing: -0.2em;
-  content: '\00a0';
+  content: "\00a0";
 }
 pre code {
   font-size: inherit;
@@ -143,7 +144,14 @@ blockquote {
 .taRight {
   text-align: right;
 }
-
+.bigTitle {
+  font-size: 4rem;
+  line-height: 3.5rem;
+  padding-bottom: 3rem;
+}
+.primary {
+  color: var(--primary);
+}
 @keyframes fadeIn {
   from {
     opacity: 0;

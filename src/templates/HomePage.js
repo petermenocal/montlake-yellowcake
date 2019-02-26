@@ -4,12 +4,12 @@ import { graphql } from 'gatsby'
 import PageHeader from '../components/PageHeader'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
+import './HomePage.css'
 
 // Export Template for use in CMS preview
 export const HomePageTemplate = ({ title, subtitle, featuredImage, body }) => (
   <main className="Home">
     <PageHeader
-      large
       title={title}
       subtitle={subtitle}
       backgroundImage={featuredImage}
@@ -18,6 +18,17 @@ export const HomePageTemplate = ({ title, subtitle, featuredImage, body }) => (
     <section className="section">
       <div className="container">
         <Content source={body} />
+      </div>
+    </section>
+
+    <section className="section">
+      <div className="PromoBoxes">
+        <div className="PromoBoxes--Box">1</div>
+        <div className="PromoBoxes--Box">1</div>
+        <div className="PromoBoxes--Box">1</div>
+        <div className="PromoBoxes--Box">1</div>
+        <div className="PromoBoxes--Box">1</div>
+        <div className="PromoBoxes--Box">1</div>
       </div>
     </section>
   </main>

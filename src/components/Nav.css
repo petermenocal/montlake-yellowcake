@@ -1,10 +1,11 @@
 .Nav {
-  background: white;
+  background: black;
+  color: whitesmoke;
   position: sticky;
   top: 0;
   z-index: 1;
-  border-bottom: 1px solid var(--lightGrey);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.025);
+  border-bottom: 1px solid black;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.475);
 }
 
 .Nav--Container {
@@ -26,6 +27,7 @@
 
 .Nav .Logo {
   margin-right: 3rem;
+  width: 15rem;
   position: relative;
 }
 
@@ -61,7 +63,7 @@
 }
 
 .Nav--GroupParent::after {
-  content: '';
+  content: "";
   position: absolute;
   top: calc(50% - 0.2rem);
   right: 1rem;
@@ -111,6 +113,7 @@
   .Nav--MenuButton {
     display: block !important;
     margin-left: auto;
+    color: var(--primary);
     z-index: 1;
   }
   .Nav .Logo {
@@ -127,7 +130,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: white;
+    background: black;
+    color: white;
     animation: Nav--Links 0.2s ease;
   }
 
@@ -177,6 +181,8 @@
 
   .Nav--GroupLinks {
     position: relative;
+    background: black;
+    color: white;
     text-align: center;
   }
 
